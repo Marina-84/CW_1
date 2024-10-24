@@ -2,9 +2,16 @@ import datetime
 import json
 import logging
 import os
-from src.utils import (filter_by_date, get_currency_rates, get_data_about_cards, get_data_from_excel, get_greeting,
-                       get_stock_rates, get_top_transactions)
 
+from src.utils import (
+    filter_by_date,
+    get_currency_rates,
+    get_data_about_cards,
+    get_data_from_excel,
+    get_greeting,
+    get_stock_rates,
+    get_top_transactions,
+)
 
 logging.basicConfig(
     filename=os.path.join(os.path.dirname(os.path.dirname(__file__)), "logs", "views.log"),

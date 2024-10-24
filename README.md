@@ -5,7 +5,7 @@
 
 ## Установка.
 1. Клонируйте репозиторий:
-   git clone https://github.com/Marina-84/Course_work_1.git
+   git clone https://github.com/Marina-84/CW_1.git
 2. Установите зависимости: mypy, flake8, black, isort, pytest, pytest-cov, requests, python-dotenv, pandas, openpyxl
 3. Для корректной работы функции запроса стоимости акций необходимо создать файл .env и заполнить его аналогично .env.example
 

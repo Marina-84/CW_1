@@ -1,5 +1,7 @@
 import tempfile
+
 import pandas as pd
+
 from src.reports import report, spending_by_category
 from tests.conftest import transactions_df_test
 

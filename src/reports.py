@@ -3,8 +3,8 @@ import json
 import logging
 import os
 from typing import Optional
-import pandas as pd
 
+import pandas as pd
 
 logging.basicConfig(
     filename=os.path.join(os.path.dirname(os.path.dirname(__file__)), "logs", "reports.log"),
@@ -19,7 +19,7 @@ PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "report.
 
 
 def report(filename=PATH):
-    """ Декоратор для создания файла отчета """
+    """Декоратор для создания файла отчета"""
 
     def my_decorator(func):
         def wrapper(*args, **kwargs):
@@ -35,7 +35,7 @@ def report(filename=PATH):
 
 
 def spending_by_category(transactions: pd.DataFrame, category: str, date: Optional[str] = None) -> pd.DataFrame:
-    """ Функция возвращает траты по заданной категории """
+    """Функция возвращает траты по заданной категории"""
 
     logger.info(f"Запуск функции {spending_by_category.__name__}")
     if date:

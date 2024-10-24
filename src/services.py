@@ -3,7 +3,6 @@ import logging
 import os
 from typing import Any
 
-
 logging.basicConfig(
     filename=os.path.join(os.path.dirname(os.path.dirname(__file__)), "logs", "services.log"),
     filemode="w",
@@ -15,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 
 def investment_bank(month: str, transactions: list[dict[str, Any]], limit: int = 50) -> float:
-    """ Функция возвращает сумму, которую удалось бы отложить в «Инвесткопилку» """
+    """Функция возвращает сумму, которую удалось бы отложить в «Инвесткопилку»"""
 
     logger.info(f"Запуск функции {investment_bank.__name__}.")
     target_date_obj = datetime.datetime.strptime(month, "%Y-%m")
